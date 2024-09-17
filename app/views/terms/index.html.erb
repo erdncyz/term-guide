@@ -1,0 +1,28 @@
+<h1>Glossary of Terms</h1>
+
+<%= form_with(url: terms_path, method: :get, local: true) do |form| %>
+  <div>
+    <%= form.label :search, "Search for a term:" %>
+    <%= form.text_field :search %>
+    <%= form.submit "Search" %>
+  </div>
+<% end %>
+
+<%= link_to 'Show All Terms', terms_path(all: true) %>
+
+<% if @show_terms %>
+  <h2>Terms:</h2>
+  <% @terms.each do |term| %>
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+      <p><strong>Şema Adı:</strong> <%= term.schema_name %></p>
+      <p><strong>Tablo Adı:</strong> <%= term.table_name %></p>
+      <p><strong>Kolon Adı:</strong> <%= term.column_name %></p>
+      <p><strong>Açıklama:</strong> <%= term.description %></p>
+      <%= link_to 'Show details', term_path(term) %>
+    </div>
+  <% end %>
+<% else %>
+  <p>No terms to display. Click "Show All Terms" to view all.</p>
+<% end %>
+
+<%= link_to 'New Term', new_term_path %>

@@ -1,5 +1,11 @@
 Term Glossary Guide
+<<<<<<< HEAD
 This project is a simple Ruby on Rails application for managing a glossary of terms used in a company or project. Users can add, search, and view terms with details such as schema name, table name, column name, and description. This is useful for maintaining a searchable reference guide for database terms or other technical vocabularies.
+=======
+This project is a simple Ruby on Rails application for managing a glossary of terms used in a company or project. Users
+can add, search, and view terms with details such as schema name, table name, column name, and description. This is
+useful for maintaining a searchable reference guide for database terms or other technical vocabularies.
+>>>>>>> 99391d5 (First commit)
 
 Features
 Add New Terms: Users can create new terms with the following details:
@@ -70,4 +76,8 @@ Commit your changes (git commit -am 'Add some feature').
 Push to the branch (git push origin feature-branch).
 Create a new Pull Request.
 License
+<<<<<<< HEAD
 This project is licensed under the MIT License. See the LICENSE file for more details.
+=======
+This project is licensed under the MIT License. See the LICENSE file for more details.
+>>>>>>> 99391d5 (First commit)
